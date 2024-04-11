@@ -38,10 +38,10 @@ void merge(Color arr1[], int size1, Color arr2[], int size2, Color result[]) {
 }
 
 int main() {
-    Color arr1[] = {Blue, Red, White, Red, Blue, White};
+    Color arr1[] = {Red, Blue, White, White, Red, Blue, Red, Blue};
     int size1 = sizeof(arr1) / sizeof(Color);
     quickSort(arr1, 0, size1 - 1); 
-    Color arr2[] = {Blue, Red, White};
+    Color arr2[] = {White, Blue, Red};
     int size2 = sizeof(arr2) / sizeof(Color);
     quickSort(arr2, 0, size2 - 1); 
     Color result[size1 + size2];
